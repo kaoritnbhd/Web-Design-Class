@@ -10,7 +10,37 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<head>
+<style>
+  /* Centering text in header and footer */
+  .w3-card-4 header, .w3-card-4 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px; /* Adjust this value for your preferred height */
+  }
+
+  /* Center image inside the card */
+  .w3-card-4 img {
+    width: 100%;
+    max-height: 200px; /* Limiting the height of the image */
+    object-fit: cover; /* Ensures the image scales correctly */
+  }
+
+  /* Reduce the width of each card */
+  .w3-card-4 {
+    margin: 10px;
+  }
+
+  /* Center rows of cards */
+  .center-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
+
+</head>
 
 <body>
   
@@ -21,50 +51,42 @@
     <a href="photoAlbumHW.html" class="w3-bar-item w3-button">Photo Album</a>
     <a href="slidesshowHW.html" class="w3-bar-item w3-button">Slides Show</a>
     <a href="triviahw.html" class="w3-bar-item w3-button">Trivia</a>
-</div>
+  </div>
 
 <!-- Container for all cards -->
 <div class="w3-container w3-padding-32">
     <h1 class="w3-center w3-purple">Places I Want to Visit</h1>
-    <div class="w3-row">
+
+    <!-- First Row of Cards -->
+    <div class="w3-row center-cards">
         <!-- Card for Japan -->
-        <div class="w3-col m3 w3-card-4">
+        <div class="w3-col m2 s4 w3-card-4">
             <header class="w3-container w3-blue">
                 <h2>Japan</h2>
             </header>
-            <img src="cards/mount fuji.jpg" alt="Japan" style="width: 100%">
+            <img src="cards/mount fuji.jpg" alt="Japan">
             <footer class="w3-container w3-blue">
                 <p>Tokyo, Kyoto, Mount Fuji</p>
             </footer>
         </div>
         
-        <div class="w3-col m1 w3-center"></div>
-        <div class="w3-col s1">
-          <p></p>
-       </div>
-
         <!-- Card for Korea -->
-        <div class="w3-col m3 w3-card-4">
+        <div class="w3-col m2 s4 w3-card-4">
             <header class="w3-container w3-green">
                 <h2>Korea</h2>
             </header>
-            <img src="cards/seoul.jpg" alt="Korea" style="width: 100%">
+            <img src="cards/seoul.jpg" alt="Korea">
             <footer class="w3-container w3-green">
                 <p>Seoul, Jeju Island</p>
             </footer>
         </div>
 
-        <div class="w3-col m1 w3-center"></div>
-        <div class="w3-col s1">
-          <p></p>
-       </div>
-
         <!-- Card for England -->
-        <div class="w3-col m3 w3-card-4">
+        <div class="w3-col m2 s4 w3-card-4">
             <header class="w3-container w3-red">
                 <h2>England</h2>
             </header>
-            <img src="cards/london.jpg" alt="England" style="width: 100%">
+            <img src="cards/london.jpg" alt="England">
             <footer class="w3-container w3-red">
                 <p>London, Oxford, Stonehenge</p>
             </footer>
@@ -72,45 +94,35 @@
     </div>
 
     <!-- Second Row of Cards -->
-    <div class="w3-row">
+    <div class="w3-row center-cards">
         <!-- Card for France -->
-        <div class="w3-col m3 w3-card-4">
+        <div class="w3-col m2 s4 w3-card-4">
             <header class="w3-container w3-purple">
                 <h2>France</h2>
             </header>
-            <img src="cards/eiffel tower.jpg" alt="France" style="width: 100%">
+            <img src="cards/eiffel tower.jpg" alt="France">
             <footer class="w3-container w3-purple">
                 <p>Paris, Eiffel Tower</p>
             </footer>
         </div>
 
-        <div class="w3-col m1 w3-center"></div>
-        <div class="w3-col s1">
-          <p></p>
-       </div>
-
         <!-- Card for Italy -->
-        <div class="w3-col m3 w3-card-4">
+        <div class="w3-col m2 s4 w3-card-4">
             <header class="w3-container w3-orange">
                 <h2>Italy</h2>
             </header>
-            <img src="cards/italy.jpg" alt="Italy" style="width: 100%">
+            <img src="cards/italy.jpg" alt="Italy">
             <footer class="w3-container w3-orange">
                 <p>Rome, Venice, Tuscany</p>
             </footer>
         </div>
 
-        <div class="w3-col m1 w3-center"></div>
-        <div class="w3-col s1">
-          <p></p>
-       </div>
-
         <!-- Card for Canada -->
-        <div class="w3-col m3 w3-card-4">
+        <div class="w3-col m2 s4 w3-card-4">
             <header class="w3-container w3-teal">
                 <h2>Canada</h2>
             </header>
-            <img src="cards/toronto.jpg" alt="Canada" style="width: 100%">
+            <img src="cards/toronto.jpg" alt="Canada">
             <footer class="w3-container w3-teal">
                 <p>Toronto, Vancouver, Banff</p>
             </footer>
