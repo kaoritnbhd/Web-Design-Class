@@ -13,10 +13,9 @@
       box-sizing: border-box;
     }
 
-    /* Background and body styles */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f9; /* Light background */
+      background-color: #bcf4ff; 
       color: #333;
     }
 
@@ -58,55 +57,37 @@
       color: #333;
     }
 
-    .hobby-container {
-      display: flex;
-      justify-content: space-around;
-      gap: 30px;
-      margin-top: 40px;
-      flex-wrap: wrap;
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
     }
 
-    .hobby-card {
-      background-color: #ffcc00; /* Bright yellow */
-      border-radius: 10px;
-      width: 250px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s;
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
     }
 
-    .hobby-card:hover {
-      transform: scale(1.05); /* Slight zoom on hover */
+    th {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1.2em;
     }
 
-    .hobby-card .icon {
-      font-size: 50px;
-      color: #333;
-      margin-bottom: 15px;
+    td {
+      background-color: #f9f9f9;
     }
 
-    .hobby-card h2 {
-      font-size: 1.8em;
-      color: #333;
+    /* List Styling */
+    .hobby-list {
+      margin-top: 30px;
+      font-size: 1.1em;
+    }
+
+    .hobby-list li {
       margin-bottom: 10px;
-    }
-
-    .hobby-card p {
-      font-size: 1em;
-      color: #555;
-    }
-
-    .guitar {
-      background-color: #ff6f61; /* Coral Red */
-    }
-
-    .reading {
-      background-color: #4caf50; /* Green */
-    }
-
-    .gaming {
-      background-color: #2196f3; /* Blue */
     }
 
     /* Footer */
@@ -137,29 +118,38 @@
   <div class="main">
     <h1>My Hobbies</h1>
 
-    <div class="hobby-container">
-      <!-- Electric Guitar Card -->
-      <div class="hobby-card guitar">
-        <i class="fa-solid fa-guitar icon"></i>
-        <h2>Electric Guitar</h2>
-        <p>I love playing the electric guitar. Music has a special place in my heart, and this hobby allows me to express myself through sounds.</p>
-      </div>
+    <!-- Table Section -->
+    <table>
+      <tr>
+        <th>Hobby</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-guitar"></i> Electric Guitar</td>
+        <td>Playing electric guitar feels like I'm in my comfortable area.. I enjoy learning new songs, experimenting with sound, and improving my skills.</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-book"></i> Reading</td>
+        <td>Books are like a way to escape from the real world for me. I enjoy reading a variety of genres from fiction to non-fiction and learning new perspectives.</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-gamepad"></i> Playing Games</td>
+        <td>Gaming is a fun way to relax for me. I like to play both single-player and multiplayer games, or story games and it's a great way to socialize.</td>
+      </tr>
+    </table>
 
-      <!-- Reading Card -->
-      <div class="hobby-card reading">
-        <i class="fa-solid fa-book icon"></i>
-        <h2>Reading</h2>
-        <p>Books take me on journeys to different worlds. Whether it's fiction or non-fiction, reading broadens my mind and lets me escape reality.</p>
-      </div>
-
-      <!-- Gaming Card -->
-      <div class="hobby-card gaming">
-        <i class="fa-solid fa-gamepad icon"></i>
-        <h2>Playing Games</h2>
-        <p>Gaming is one of my favorite pastimes. It’s a great way to relax, challenge myself, and connect with others in the gaming community.</p>
-      </div>
+    <!-- Hobby List Section -->
+    <div class="hobby-list">
+      <h2>Information About My Hobbies</h2>
+      <ul>
+        <li><strong>Electric Guitar:</strong> I love rock and blues music, and I often cover my favorite songs. I've been playing for 3 years!</li>
+        <li><strong>Reading:</strong> My favorite genres are fantasy, science fiction, and self-development. A good book is my best companion on weekends.</li>
+        <li><strong>Gaming:</strong> I enjoy open-world games and strategy games the most. I'm part of a gaming community where we organize events!</li>
+      </ul>
     </div>
   </div>
+
+  
 
   <!-- Footer -->
   <div class="footer">
