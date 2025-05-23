@@ -23,19 +23,27 @@
 
     /* Header Styling */
     header {
-      background-color: #4CAF50; /* Green Header */
+      background: linear-gradient(135deg, #2a4d2f, #4CAF50); /* Dark Green Gradient */
       color: white;
-      padding: 20px 0;
+      padding: 60px 0; /* More space on top and bottom */
       text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      margin-bottom: 20px;
     }
 
     header h1 {
-      font-size: 3em;
-      letter-spacing: 2px;
+      font-size: 3.5em; /* Larger font size for the title */
+      font-weight: bold; /* Bold text */
+      letter-spacing: 2px; /* Letter spacing for a cleaner look */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
+      margin-top: 10px;
+      font-weight: lighter;
+      letter-spacing: 1px;
     }
 
     /* Navbar Styling */
@@ -44,6 +52,7 @@
       overflow: hidden;
       position: sticky;
       top: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for navbar */
     }
 
     .navbar a {
@@ -54,6 +63,7 @@
       padding: 14px 20px;
       text-decoration: none;
       font-size: 1.1em;
+      transition: background-color 0.3s ease;
     }
 
     .navbar a:hover {
@@ -65,7 +75,10 @@
     .main {
       padding: 30px 15px;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 40px auto; /* Added margin for space */
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow to main content */
     }
 
     /* Hero Image */
@@ -81,6 +94,14 @@
     h2 {
       margin-top: 20px;
       color: #4CAF50;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      margin-bottom: 20px;
     }
 
     ul {
@@ -93,10 +114,11 @@
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
+      padding: 15px;
+      position: relative;
       bottom: 0;
+      width: 100%;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
 
   </style>
@@ -104,34 +126,32 @@
 <body>
 
 <!-- Navbar -->
-  <div class="navbar">
-    <a href="indexfinal.html">About Me</a>
-    <a href="music.html">Music</a>
-    <a href="travel.html">Travel</a>
-    <a href="hobby.html">Hobbies</a>  
-    <a href="favorite.html">Favorite Subject</a>
-  </div>
+<div class="navbar">
+  <a href="indexfinal.html">About Me</a>
+  <a href="music.html">Music</a>
+  <a href="travel.html">Travel</a>
+  <a href="hobby.html">Hobbies</a>  
+  <a href="favorite.html">Favorite Subject</a>
+</div>
 
+<!-- Header -->
+<header>
+  <h1>My Portfolio</h1>
+  <p>Ayse Cullu - Final Project</p>
+</header>
 
+<!-- Main Content -->
+<div class="main">
+  <h1><i class="fa-solid fa-laptop-code"></i> About Me</h1>
+  <img src="images/programmer.png" alt="My Profile" class="hero-image">
 
-  <!-- Header -->
-  <header>
-    <h1>My Portfolio</h1>
-    <p>Ayse Cullu - Final Project</p>
-  </header>
+  <p>My name is Ayse, I'm Dr. Shearing's Web Design 1 student. This will be my last project in this class. In this project, I'll be showing what I listen to, where I want to travel, what my hobbies are, and what my favorite subject is.</p>
+</div>
 
-  <!-- Main Content -->
-  <div class="main">
-    <h1><i class="fa-solid fa-laptop-code"></i> About Me</h1>
-    <img src="images/profile.jpg" alt="My Profile" class="hero-image">
-
-    <p>My name is Ayse, I'm Dr.Shearing's Web Design 1 student. This will be my last project in this class. In this project, I'll be showing what I listen to, where do I want to travel, what are my hobbies, and what is my favorite subject.</p>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 | Ayse Cullu</p>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2025 | Ayse Cullu</p>
+</footer>
 
 </body>
 </html>

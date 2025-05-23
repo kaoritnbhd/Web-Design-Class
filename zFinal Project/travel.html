@@ -19,6 +19,7 @@
       background-color: #839295; /* Light Blue Background */
       color: #333;
     }
+
     /* Navbar Styling */
     .navbar {
       background-color: #333;
@@ -40,6 +41,20 @@
     .navbar a:hover {
       background-color: #ddd;
       color: black;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #4CAF50; /* Dark Green Header */
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      letter-spacing: 2px;
     }
 
     /* Main content section */
@@ -71,11 +86,12 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       width: 250px;
       overflow: hidden;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
     .card:hover {
       transform: scale(1.05); /* Slight zoom on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
     }
 
     .card img {
@@ -104,16 +120,16 @@
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px;
-      position: fixed;
+      padding: 15px;
+      position: relative;
       width: 100%;
       bottom: 0;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
 
   </style>
 </head>
 <body>
-
 
   <!-- Navbar -->
   <div class="navbar">
@@ -124,96 +140,104 @@
     <a href="favorite.html">Favorite Subject</a>
   </div>
 
+  <!-- Header -->
+  <header>
+    <h1>Places I Want To Visit</h1>
+  </header>
+
   <!-- Main Content -->
   <div class="main">
-    <h1>Places I Want To Visit</h1>
 
     <div class="card-container">
       <!-- France Card -->
-       <a href= https://en.wikipedia.org/wiki/France>
-      <div class="card">
-        <img src="images/france.jpg" alt="France">
-        <div class="card-content">
-          <h2 class="card-title">France</h2>
-          <p class="card-description">The beautiful country known for its iconic Eiffel Tower, delicious cuisine, and rich history.</p>
+      <a href="https://en.wikipedia.org/wiki/France">
+        <div class="card">
+          <img src="images/france.jpg" alt="France">
+          <div class="card-content">
+            <h2 class="card-title">France</h2>
+            <p class="card-description">The beautiful country known for its iconic Eiffel Tower, delicious cuisine, and rich history.</p>
+          </div>
         </div>
-      </div>
       </a>
 
       <!-- Japan Card -->
-       <a href= https://en.wikipedia.org/wiki/Japan>
-      <div class="card">
-        <img src="images/japan.jpg" alt="Japan">
-        <div class="card-content">
-          <h2 class="card-title">Japan</h2>
-          <p class="card-description">A perfect blend of ancient culture and modern technology, with beautiful temples and cutting-edge cities.</p>
+      <a href="https://en.wikipedia.org/wiki/Japan">
+        <div class="card">
+          <img src="images/japan.jpg" alt="Japan">
+          <div class="card-content">
+            <h2 class="card-title">Japan</h2>
+            <p class="card-description">A perfect blend of ancient culture and modern technology, with beautiful temples and cutting-edge cities.</p>
+          </div>
         </div>
-      </div>
       </a>
 
       <!-- Korea Card -->
-       <a href= https://en.wikipedia.org/wiki/Korea>
-      <div class="card">
-        <img src="images/korea.jpg" alt="Korea">
-        <div class="card-content">
-          <h2 class="card-title">Korea</h2>
-          <p class="card-description">Famous for its pop culture, rich traditions, and stunning landscapes, Korea is a must-visit destination.</p>
+      <a href="https://en.wikipedia.org/wiki/Korea">
+        <div class="card">
+          <img src="images/korea.jpg" alt="Korea">
+          <div class="card-content">
+            <h2 class="card-title">Korea</h2>
+            <p class="card-description">Famous for its pop culture, rich traditions, and stunning landscapes, Korea is a must-visit destination.</p>
+          </div>
         </div>
-      </div>
       </a>
 
       <!-- Italy Card -->
-       <a href= https://en.wikipedia.org/wiki/Italy>
-      <div class="card">
-        <img src="images/italy.jpg" alt="Italy">
-        <div class="card-content">
-          <h2 class="card-title">Italy</h2>
-          <p class="card-description">From the historic ruins of Rome to the canals of Venice, Italy offers some of the world’s best art, food, and culture.</p>
+      <a href="https://en.wikipedia.org/wiki/Italy">
+        <div class="card">
+          <img src="images/italy.jpg" alt="Italy">
+          <div class="card-content">
+            <h2 class="card-title">Italy</h2>
+            <p class="card-description">From the historic ruins of Rome to the canals of Venice, Italy offers some of the world’s best art, food, and culture.</p>
+          </div>
         </div>
-      </div>
       </a>
+
       <!-- Spain Card -->
-       <a href= https://en.wikipedia.org/wiki/Spain>
-      <div class="card">
-        <img src="images/spain.jpg" alt="Spain">
-        <div class="card-content">
-          <h2 class="card-title">Spain</h2>
-          <p class="card-description">Famous for its vibrant culture, rich history, and beautiful beaches, Spain is the perfect destination for relaxation and adventure.</p>
+      <a href="https://en.wikipedia.org/wiki/Spain">
+        <div class="card">
+          <img src="images/spain.jpg" alt="Spain">
+          <div class="card-content">
+            <h2 class="card-title">Spain</h2>
+            <p class="card-description">Famous for its vibrant culture, rich history, and beautiful beaches, Spain is the perfect destination for relaxation and adventure.</p>
+          </div>
         </div>
-      </div>
       </a>
+
       <!-- Australia Card -->
-       <a href= https://en.wikipedia.org/wiki/Australia>
-      <div class="card">
-        <img src="images/australia.jpg" alt="Australia">
-        <div class="card-content">
-          <h2 class="card-title">Australia</h2>
-          <p class="card-description">Known for its stunning landscapes, vibrant wildlife, and iconic landmarks like the Sydney Opera House and Great Barrier Reef.</p>
+      <a href="https://en.wikipedia.org/wiki/Australia">
+        <div class="card">
+          <img src="images/australia.jpg" alt="Australia">
+          <div class="card-content">
+            <h2 class="card-title">Australia</h2>
+            <p class="card-description">Known for its stunning landscapes, vibrant wildlife, and iconic landmarks like the Sydney Opera House and Great Barrier Reef.</p>
+          </div>
         </div>
-      </div>
       </a>
+
       <!-- Brazil Card -->
-       <a href= https://en.wikipedia.org/wiki/Brazil>
-      <div class="card">
-        <img src="images/brazil.jpg" alt="Brazil">
-        <div class="card-content">
-          <h2 class="card-title">Brazil</h2>
-          <p class="card-description">A country full of color and life, from the Amazon rainforest to its lively Carnival celebrations and beautiful beaches.</p>
+      <a href="https://en.wikipedia.org/wiki/Brazil">
+        <div class="card">
+          <img src="images/brazil.jpg" alt="Brazil">
+          <div class="card-content">
+            <h2 class="card-title">Brazil</h2>
+            <p class="card-description">A country full of color and life, from the Amazon rainforest to its lively Carnival celebrations and beautiful beaches.</p>
+          </div>
         </div>
-      </div>
       </a>
+
       <!-- Canada Card -->
-       <a href= https://en.wikipedia.org/wiki/Canada>
-      <div class="card">
-        <img src="images/canada.jpg" alt="Canada">
-        <div class="card-content">
-          <h2 class="card-title">Canada</h2>
-          <p class="card-description">A vast and diverse country, known for its natural beauty, stunning national parks, and multicultural cities like Toronto and Vancouver.</p>
+      <a href="https://en.wikipedia.org/wiki/Canada">
+        <div class="card">
+          <img src="images/canada.jpg" alt="Canada">
+          <div class="card-content">
+            <h2 class="card-title">Canada</h2>
+            <p class="card-description">A vast and diverse country, known for its natural beauty, stunning national parks, and multicultural cities like Toronto and Vancouver.</p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
-</a>
 
   <!-- Footer -->
   <div class="footer">
