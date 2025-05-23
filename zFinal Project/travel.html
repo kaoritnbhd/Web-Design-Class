@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Destinations</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background and body styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Light background */
+      color: #333;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Main content section */
+    .main {
+      padding: 30px 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2a402a;
+    }
+
+    /* Card Layout */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.6em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 1em;
+      color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="indexfinal.html">About Me</a>
+    <a href="music.html">Music</a>
+    <a href="travel.html">Travel</a>
+    <a href="hobby.html">Hobbies</a>  
+    <a href="favorite.html">Favorite Subject</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Travel Destinations</h1>
+
+    <div class="card-container">
+      <!-- France Card -->
+      <div class="card">
+        <img src="images/france.jpg" alt="France">
+        <div class="card-content">
+          <h2 class="card-title">France</h2>
+          <p class="card-description">The beautiful country known for its iconic Eiffel Tower, delicious cuisine, and rich history.</p>
+        </div>
+      </div>
+
+      <!-- Japan Card -->
+      <div class="card">
+        <img src="images/japan.jpg" alt="Japan">
+        <div class="card-content">
+          <h2 class="card-title">Japan</h2>
+          <p class="card-description">A perfect blend of ancient culture and modern technology, with beautiful temples and cutting-edge cities.</p>
+        </div>
+      </div>
+
+      <!-- Korea Card -->
+      <div class="card">
+        <img src="images/korea.jpg" alt="Korea">
+        <div class="card-content">
+          <h2 class="card-title">Korea</h2>
+          <p class="card-description">Famous for its pop culture, rich traditions, and stunning landscapes, Korea is a must-visit destination.</p>
+        </div>
+      </div>
+
+      <!-- Italy Card -->
+      <div class="card">
+        <img src="images/italy.jpg" alt="Italy">
+        <div class="card-content">
+          <h2 class="card-title">Italy</h2>
+          <p class="card-description">From the historic ruins of Rome to the canals of Venice, Italy offers some of the world’s best art, food, and culture.</p>
+        </div>
+      </div>
+
+      <!-- Spain Card -->
+      <div class="card">
+        <img src="images/spain.jpg" alt="Spain">
+        <div class="card-content">
+          <h2 class="card-title">Spain</h2>
+          <p class="card-description">Famous for its vibrant culture, rich history, and beautiful beaches, Spain is the perfect destination for relaxation and adventure.</p>
+        </div>
+      </div>
+
+      <!-- Australia Card -->
+      <div class="card">
+        <img src="images/australia.jpg" alt="Australia">
+        <div class="card-content">
+          <h2 class="card-title">Australia</h2>
+          <p class="card-description">Known for its stunning landscapes, vibrant wildlife, and iconic landmarks like the Sydney Opera House and Great Barrier Reef.</p>
+        </div>
+      </div>
+
+      <!-- Brazil Card -->
+      <div class="card">
+        <img src="images/brazil.jpg" alt="Brazil">
+        <div class="card-content">
+          <h2 class="card-title">Brazil</h2>
+          <p class="card-description">A country full of color and life, from the Amazon rainforest to its lively Carnival celebrations and beautiful beaches.</p>
+        </div>
+      </div>
+
+      <!-- Canada Card -->
+      <div class="card">
+        <img src="images/canada.jpg" alt="Canada">
+        <div class="card-content">
+          <h2 class="card-title">Canada</h2>
+          <p class="card-description">A vast and diverse country, known for its natural beauty, stunning national parks, and multicultural cities like Toronto and Vancouver.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <footer>
+      <p>© 2025 | Ayse Cullu</p>
+    </footer>
+  </div>
+
+</body>
+</html>
